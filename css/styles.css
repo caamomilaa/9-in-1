@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+.c-1 {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  position: relative;
+  box-shadow: 150px 150px cornflowerblue, 250px 250px cornflowerblue;
+}
+.c-1::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  position: absolute;
+  box-shadow: 450px 450px cornflowerblue, 550px 550px cornflowerblue;
+}
+.c-1 ::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  position: absolute;
+  box-shadow: 650px 650px cornflowerblue, 750px 750px cornflowerblue;
+}
