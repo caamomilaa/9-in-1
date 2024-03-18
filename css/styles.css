@@ -1,27 +1,32 @@
 * {
   box-sizing: border-box;
+  background-color: #333;
 }
 
 .c-1 {
   width: 100px;
   height: 100px;
-  background-color: yellow;
+  border-radius: 50px;
+  background-color: rgb(111, 192, 74);
   position: relative;
-  box-shadow: 150px 150px cornflowerblue, 250px 250px cornflowerblue;
+  box-shadow: 300px 150px rgb(181, 108, 34), 150px 300px rgb(210, 212, 53);
 }
 .c-1::after {
   content: "";
+  left: 150% ;
   width: 100px;
   height: 100px;
-  background-color: yellow;
+  background-color: rgb(228, 149, 205);
   position: absolute;
-  box-shadow: 450px 450px cornflowerblue, 550px 550px cornflowerblue;
+  box-shadow: -150px 150px rgb(142, 38, 38), 150px 300px rgb(110, 66, 164);
 }
-.c-1 ::before {
+.c-1::before {
   content: "";
+  left: 300%;
   width: 100px;
   height: 100px;
-  background-color: yellow;
+  border-radius: 25px;
+  background-color: rgb(60, 47, 197);
   position: absolute;
-  box-shadow: 650px 650px cornflowerblue, 750px 750px cornflowerblue;
+  box-shadow: -150px 150px rgb(87, 158, 173), -300px 300px rgb(220, 224, 232);
 }
